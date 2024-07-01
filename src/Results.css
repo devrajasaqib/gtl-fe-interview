@@ -1,0 +1,105 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+
+.cards-wrap {
+  padding: 50px 0;
+}
+.container {
+  max-width: 1199px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.cards-row * {
+  box-sizing: border-box;
+}
+.cards-row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -10px;
+  margin-right: -10px;
+  row-gap: 20px;
+}
+.cards-col {
+  max-width: 33.333%;
+  flex: 0 0 33.333%;
+  width: 100%;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.card {
+  font-family: "Inter", sans-serif;
+  border-radius: 0.5rem;
+  border: 0;
+  background-color: #fff;
+  box-shadow: 0 0.125rem 0 rgba(10, 10, 10, 0.04);
+  position: relative;
+  width: 100%;
+  color: #333335;
+  border: 1px solid #49b6f5;
+  box-shadow: 0 3px 10px 0 rgba(48, 46, 56, 0.1);
+}
+.card .card-body {
+  padding: 1rem;
+  color: #333335;
+}
+.card ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.card span {
+  font-size: 14px;
+  font-weight: 400;
+  color: #333335;
+  display: inline-flex;
+  line-height: 1;
+}
+.card li {
+  display: flex;
+}
+.card li + li {
+  margin-top: 10px;
+}
+.card li span:first-child {
+  width: 120px;
+  flex: 0 0 120px;
+  font-weight: 600;
+}
+.card li:last-child span:first-child, li:first-child span:first-child  {
+    margin-top: 8px;
+  }
+.card .badge {
+  padding: 7px;
+  border-radius: 0.25rem;
+  font-weight: 500;
+}
+.card .badge-info {
+  color: #0ea5e9;
+  background-color: rgba(14, 165, 233, 0.1);
+}
+.card .badge-success {
+  color: #10b981;
+  background-color: rgba(16, 185, 129, 0.2);
+}
+
+.card .badge-red {
+    color: red;
+    background-color: rgb(252, 181, 181);
+  }
+
+@media (max-width: 991px) {
+  .cards-col {
+    max-width: 50%;
+    flex: 0 0 50%;
+  }
+}
+
+@media (max-width: 640px) {
+  .cards-col {
+    max-width: 100%;
+    flex: 0 0 100%;
+  }
+}
